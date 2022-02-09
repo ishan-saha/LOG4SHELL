@@ -101,7 +101,7 @@ if __name__ == "__main__":
         print(format_text("Error","user interupted the program."))
         sys.exit(0)
     except IndexError:
-        print(format_text("[!] CVE-2021-44228 Exploit","Usage: exploit.py <AttackerIP> <WebServerPort> <LPORT> <TargetURL>"))
+        print(format_text("[!] CVE-2021-44228 Exploit","Usage: main.py <AttackerIP> <WebServerPort> <LPORT> <TargetURL>"))
         sys.exit(0)
     except Exception as e:
         print(format_text("[-]",e))
