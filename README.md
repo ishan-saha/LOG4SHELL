@@ -13,20 +13,8 @@ This is a simple automated Log4j exploit script written in python and using olde
 
 The  **setup.sh**  file should be run to install the requirements. Run the following:
 >chmod +x setup.sh 
+>
 >./setup.sh
 
 This file simply downloads the older version of JDK and extracts it. Secondly, it installs ```colorama``` and ```requests``` python3 package
 
-
-## Exploit WorkFlow
-
-```mermaid
-graph LR
-A[Exploit] -- Older JDK Compiled--> B([Exploit.class])
-A --> C(Request) 
-C-- Payload -->F(Target Server)
-F-->D([LDAP Handler])
-D-->E(WebServer)
-B-->E
-E--> G((Revers Shell))
-```
